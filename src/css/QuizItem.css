@@ -1,0 +1,20 @@
+.quizItem {
+  background: grey;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.quizItem:hover {
+  background: black;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px;
+  color: grey;
+  font-size: 20px;
+}

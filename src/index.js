@@ -1,12 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import QuizBox from "./components/QuizBox.js";
+import bookLibrary from "./components/data/bookLibrary.js";
+import data from "./components/data/data.js";
+import shuffle from "./shuffle.js";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const AuthorQuiz = () => {
+  const [game, setGame] = React.useState(0);
+  const [answers, setAnswers] = React.useState(bookLibrary);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  let quiz = (
+    <QuizBox
+      gameID={game}
+      data={data[game]}
+      bookLibrary={answers}
+      setGame={setGame}
+    />
+  );
+  return <div className={"outerBox"}>{quiz}</div>;
+};
+
+ReactDOM.render(<AuthorQuiz />, document.getElementById("root"));
