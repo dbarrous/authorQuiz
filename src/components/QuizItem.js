@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/QuizItem.css";
-import bookLibrary from "./data/bookLibrary";
 
 const QuizItem = props => {
   return (

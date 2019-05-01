@@ -7,24 +7,31 @@ const QuizBox = props => {
   const [color, setColor] = React.useState("blue");
 
   const checkAnswer = bool => {
-    if (color == "blue") {
+    if (color === "blue") {
       bool ? setColor("green") : setColor("red");
     }
   };
 
   const helper = () => {
-    props.setGame(props.gameID + 1);
+    props.nextRound();
     setColor("blue");
     return "";
   };
+
+  const displayBtn = <button onClick={() => helper()}>Next</button>;
   return (
     <div style={{ background: color }}>
       <h1>{props.data.author}</h1>
-
+      <img src={props.data.authorImg} alt={props.data.author} />
       {props.bookLibrary.map((book, i) => (
-        <QuizItem book={book} bool={newArray[i]} checkAnswer={checkAnswer} />
+        <QuizItem
+          book={book}
+          bool={newArray[i]}
+          checkAnswer={checkAnswer}
+          key={i}
+        />
       ))}
-      <button onClick={() => helper()}>Next</button>
+      {color !== "blue" ? displayBtn : null}
     </div>
   );
 };
