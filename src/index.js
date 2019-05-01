@@ -5,6 +5,9 @@ import bookLibrary from "./components/data/bookLibrary.js";
 import data from "./components/data/data.js";
 import shuffle from "./shuffle.js";
 
+let array1 = Array.from(Array(24), (x, index) => index);
+shuffle(array1);
+let round = array1.pop();
 const AuthorQuiz = () => {
   let numberOfQuestions = 4;
 
@@ -22,11 +25,12 @@ const AuthorQuiz = () => {
 
     return ans;
   };
-  const [game, setGame] = React.useState(0);
+  const [game, setGame] = React.useState(round);
   const [answers, setAnswers] = React.useState(answerArray(bookLibrary));
+  console.log(game);
 
   const nextRound = () => {
-    setGame(game + 1);
+    setGame(array1.pop());
     return null;
   };
   /* eslint-disable */

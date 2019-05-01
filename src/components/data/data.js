@@ -1,18 +1,4 @@
-//Author Quiz Sample Data Scehma
-/*
-{
-  author: "author1",
-  books: ["book1", "book2","book3"]
-},
-{
-  author: "author2",
-  books: ["book1", "book2","book3"]
-},
-{
-  author: "author3",
-  books: ["book1", "book2","book3"]
-}
-*/
+//Author Quiz Data
 
 const data = {
   0: {
@@ -39,10 +25,7 @@ const data = {
     books: [
       "Harry Potter: Sorcerer's Stone",
       "Harry Potter: Deathly Hollows",
-      "Harry Potter: Chamber of Secrets",
-      "Harry Potter: Prisoner of Askaban",
-      "Harry Potter: Order of the Phoenix",
-      "Harry Potter: Half-Blood Prince"
+      "Harry Potter: Chamber of Secrets"
     ]
   },
   3: {
@@ -123,88 +106,74 @@ const data = {
     books: ["Oliver Twist", "David Copperfield", "A Tale of Two Cities"]
   },
   14: {
-    id: 2,
+    id: 14,
     authorImg:
-      "https://specials-images.forbesimg.com/imageserve/5b43b8574bbe6f1becf1c11f/416x416.jpg?background=000000&cropX1=525&cropX2=2275&cropY1=80&cropY2=1830",
-    author: "J.K. Rowling",
-    books: [
-      "Harry Potter: Sorcerer's Stone",
-      "Harry Potter: Deathly Hollows",
-      "Harry Potter: Chamber of Secrets",
-      "Harry Potter: Prisoner of Askaban",
-      "Harry Potter: Order of the Phoenix",
-      "Harry Potter: Half-Blood Prince"
-    ]
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/F_Scott_Fitzgerald_1921.jpg/440px-F_Scott_Fitzgerald_1921.jpg",
+    author: "F. Scott Fitzgerald",
+    books: ["The Great Gatsby"]
   },
-  2: {
-    id: 2,
+  15: {
+    id: 15,
     authorImg:
-      "https://specials-images.forbesimg.com/imageserve/5b43b8574bbe6f1becf1c11f/416x416.jpg?background=000000&cropX1=525&cropX2=2275&cropY1=80&cropY2=1830",
-    author: "J.K. Rowling",
-    books: [
-      "Harry Potter: Sorcerer's Stone",
-      "Harry Potter: Deathly Hollows",
-      "Harry Potter: Chamber of Secrets",
-      "Harry Potter: Prisoner of Askaban",
-      "Harry Potter: Order of the Phoenix",
-      "Harry Potter: Half-Blood Prince"
-    ]
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/440px-Shakespeare.jpg",
+    author: "William Shakespeare",
+    books: ["Hamlet", "Macbeth", "Midsummer Night's Dream"]
   },
-  2: {
-    id: 2,
+  16: {
+    id: 16,
     authorImg:
-      "https://specials-images.forbesimg.com/imageserve/5b43b8574bbe6f1becf1c11f/416x416.jpg?background=000000&cropX1=525&cropX2=2275&cropY1=80&cropY2=1830",
-    author: "J.K. Rowling",
-    books: [
-      "Harry Potter: Sorcerer's Stone",
-      "Harry Potter: Deathly Hollows",
-      "Harry Potter: Chamber of Secrets",
-      "Harry Potter: Prisoner of Askaban",
-      "Harry Potter: Order of the Phoenix",
-      "Harry Potter: Half-Blood Prince"
-    ]
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/CassandraAusten-JaneAusten%28c.1810%29_hires.jpg/400px-CassandraAusten-JaneAusten%28c.1810%29_hires.jpg",
+    author: "Jane Austen",
+    books: ["Sense and Sensibility", "Pride and Prejudice", "Emma"]
   },
-  2: {
-    id: 2,
+  17: {
+    id: 17,
     authorImg:
-      "https://specials-images.forbesimg.com/imageserve/5b43b8574bbe6f1becf1c11f/416x416.jpg?background=000000&cropX1=525&cropX2=2275&cropY1=80&cropY2=1830",
-    author: "J.K. Rowling",
-    books: [
-      "Harry Potter: Sorcerer's Stone",
-      "Harry Potter: Deathly Hollows",
-      "Harry Potter: Chamber of Secrets",
-      "Harry Potter: Prisoner of Askaban",
-      "Harry Potter: Order of the Phoenix",
-      "Harry Potter: Half-Blood Prince"
-    ]
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg/440px-George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg",
+    author: "Virginia Woolf",
+    books: ["Mrs Dalloway", "To the Lighthouse"]
   },
-  2: {
-    id: 2,
+  18: {
+    id: 18,
     authorImg:
-      "https://specials-images.forbesimg.com/imageserve/5b43b8574bbe6f1becf1c11f/416x416.jpg?background=000000&cropX1=525&cropX2=2275&cropY1=80&cropY2=1830",
-    author: "J.K. Rowling",
-    books: [
-      "Harry Potter: Sorcerer's Stone",
-      "Harry Potter: Deathly Hollows",
-      "Harry Potter: Chamber of Secrets",
-      "Harry Potter: Prisoner of Askaban",
-      "Harry Potter: Order of the Phoenix",
-      "Harry Potter: Half-Blood Prince"
-    ]
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/George_Orwell_press_photo.jpg/440px-George_Orwell_press_photo.jpg",
+    author: "George Orwell",
+    books: ["Animal Farm", "1984"]
   },
-  2: {
-    id: 2,
+  19: {
+    id: 19,
     authorImg:
-      "https://specials-images.forbesimg.com/imageserve/5b43b8574bbe6f1becf1c11f/416x416.jpg?background=000000&cropX1=525&cropX2=2275&cropY1=80&cropY2=1830",
-    author: "J.K. Rowling",
-    books: [
-      "Harry Potter: Sorcerer's Stone",
-      "Harry Potter: Deathly Hollows",
-      "Harry Potter: Chamber of Secrets",
-      "Harry Potter: Prisoner of Askaban",
-      "Harry Potter: Order of the Phoenix",
-      "Harry Potter: Half-Blood Prince"
-    ]
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Vladimir_Nabokov_1973.jpg/440px-Vladimir_Nabokov_1973.jpg",
+    author: "Vladimir Nabokov",
+    books: ["Lolita", "Ada"]
+  },
+  20: {
+    id: 20,
+    authorImg:
+      "https://upload.wikimedia.org/wikipedia/commons/e/e7/John_Steinbeck_1962.jpg",
+    author: "John Steinback",
+    books: ["Of Mice and Men", "The Grapes of Wrath"]
+  },
+  21: {
+    id: 21,
+    authorImg:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Angelou_at_Clinton_inauguration_%28cropped_2%29.jpg/440px-Angelou_at_Clinton_inauguration_%28cropped_2%29.jpg",
+    author: "Maya Angelou",
+    books: ["I Know Why the Caged Bird Sings"]
+  },
+  22: {
+    id: 22,
+    authorImg:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Edgar_Allan_Poe%2C_circa_1849%2C_restored%2C_squared_off.jpg/400px-Edgar_Allan_Poe%2C_circa_1849%2C_restored%2C_squared_off.jpg",
+    author: "Edgar Allan Poe",
+    books: ["The Tell-Tale Heart", "The Racen"]
+  },
+  23: {
+    id: 23,
+    authorImg:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ted_Geisel_NYWTS_2_crop.jpg/440px-Ted_Geisel_NYWTS_2_crop.jpg",
+    author: "Dr.Seuss",
+    books: ["The Cat in the Hat", "Green Eggs and Ham"]
   }
 };
 

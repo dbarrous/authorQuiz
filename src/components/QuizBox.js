@@ -22,15 +22,22 @@ const QuizBox = props => {
   return (
     <div style={{ background: color }}>
       <h1>{props.data.author}</h1>
-      <img src={props.data.authorImg} alt={props.data.author} />
-      {props.bookLibrary.map((book, i) => (
-        <QuizItem
-          book={book}
-          bool={newArray[i]}
-          checkAnswer={checkAnswer}
-          key={i}
-        />
-      ))}
+      <img
+        src={props.data.authorImg}
+        alt={props.data.author}
+        style={{ float: "left", width: "300px" }}
+      />
+      <div style={{ float: "right" }}>
+        {props.bookLibrary.map((book, i) => (
+          <QuizItem
+            book={book}
+            bool={newArray[i]}
+            checkAnswer={checkAnswer}
+            key={i}
+          />
+        ))}
+      </div>
+
       {color !== "blue" ? displayBtn : null}
     </div>
   );
