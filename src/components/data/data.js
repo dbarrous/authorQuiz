@@ -166,7 +166,7 @@ const data = {
     authorImg:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Edgar_Allan_Poe%2C_circa_1849%2C_restored%2C_squared_off.jpg/400px-Edgar_Allan_Poe%2C_circa_1849%2C_restored%2C_squared_off.jpg",
     author: "Edgar Allan Poe",
-    books: ["The Tell-Tale Heart", "The Racen"]
+    books: ["The Tell-Tale Heart", "The Raven"]
   },
   23: {
     id: 23,

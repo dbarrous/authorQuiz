@@ -45,7 +45,7 @@ const bookLibrary = [
   "The Grapes of Wrath",
   "I Know Why the Caged Bird Sings",
   "The Tell-Tale Heart",
-  "The Racen",
+  "The Raven",
   "The Cat in the Hat",
   "Green Eggs and Ham"
 ];

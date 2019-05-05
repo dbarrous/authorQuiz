@@ -8,14 +8,20 @@ const QuizBox = props => {
 
   const checkAnswer = bool => {
     if (color === "blue") {
-      bool ? setColor("green") : setColor("red");
+      bool ? winner() : setColor("red");
     }
   };
 
   const helper = () => {
     props.nextRound();
     setColor("blue");
+
     return "";
+  };
+
+  const winner = () => {
+    props.setScore(props.score + 1);
+    setColor("green");
   };
 
   const displayBtn = <button onClick={() => helper()}>Next</button>;
