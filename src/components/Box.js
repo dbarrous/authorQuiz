@@ -2,9 +2,9 @@ import React from "react";
 
 import AuthorQuiz from "./AuthorQuiz";
 
-const Box = props => {
+const Box = () => {
   const [score, setScore] = React.useState(0);
-  const [timer, setTimer] = React.useState(30);
+  const [timer, setTimer] = React.useState(45);
 
   //TODO finish replay feature without needing to reload
   // const playAgain = () => {
@@ -13,10 +13,10 @@ const Box = props => {
   // };
 
   let stats = (
-    <>
-      <h1>Score: {score}</h1>
-      <h1>Timer: {timer}</h1>
-    </>
+    <div className="stats">
+      <h1 className="score">Score: {score}</h1>
+      <h1 className="timer">Timer: {timer}</h1>
+    </div>
   );
   React.useEffect(() => {
     let timerID = setInterval(() => tick(), 1000);
