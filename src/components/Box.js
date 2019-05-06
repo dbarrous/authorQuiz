@@ -69,6 +69,12 @@ const Box = () => {
         )}
         {mode && timer > 0 && (
           <div>
+            <h1>Author Quiz</h1>
+            <p>
+              Instructions: Correctly guess the book of the authors pictured to
+              earn points before time runs out!
+            </p>
+            <br />
             <div>
               <button onClick={() => gameMode("easy")}>Easy Mode</button>
               <p>Gives you 60 Seconds to Choose Answers</p>
