@@ -36,16 +36,18 @@ const QuizBox = props => {
           <h1>You are Wrong!</h1>
         ) : null}
       </div>
-      <div className="quiz">
-        {props.bookLibrary.map((book, i) => (
-          <QuizItem
-            book={book}
-            bool={newArray[i]}
-            checkAnswer={checkAnswer}
-            key={i}
-          />
-        ))}
-      </div>
+      {color === "blue" && (
+        <div className="quiz">
+          {props.bookLibrary.map((book, i) => (
+            <QuizItem
+              book={book}
+              bool={newArray[i]}
+              checkAnswer={checkAnswer}
+              key={i}
+            />
+          ))}
+        </div>
+      )}
 
       {color !== "blue" ? displayBtn : null}
     </div>

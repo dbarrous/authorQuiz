@@ -28,8 +28,18 @@ const AuthorQuiz = props => {
   const [answers, setAnswers] = React.useState(answerArray(bookLibrary));
 
   const nextRound = () => {
-    setGame(array1.pop());
-    return null;
+    if (array1.length >= 1) {
+      console.log(array1);
+      setGame(array1.pop());
+      return null;
+    } else {
+      array1 = Array.from(Array(24), (x, index) => index);
+      shuffle(array1);
+      console.log("New" + array1);
+      setGame(array1.pop());
+      console.log("New after Pop" + array1);
+      return null;
+    }
   };
   /* eslint-disable */
   React.useEffect(() => {
