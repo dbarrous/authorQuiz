@@ -54,6 +54,10 @@ const AuthorQuiz = props => {
       nextRound={nextRound}
       setScore={props.setScore}
       score={props.score}
+      setLives={props.setLives}
+      lives={props.lives}
+      setTimer={props.setTimer}
+      timer={props.timer}
     />
   );
   return <div className={"outerBox"}>{quiz}</div>;

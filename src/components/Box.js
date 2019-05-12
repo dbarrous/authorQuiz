@@ -4,6 +4,7 @@ import AuthorQuiz from "./AuthorQuiz";
 
 const Box = () => {
   const [score, setScore] = React.useState(0);
+  const [lives, setLives] = React.useState(2);
   const [timer, setTimer] = React.useState(99999);
   const [readyState, setReadyState] = React.useState(false);
   const [mode, setMode] = React.useState(true);
@@ -17,6 +18,7 @@ const Box = () => {
     <div className="stats">
       <h1 className="score">Score: {score}</h1>
       <h1 className="timer">Timer: {timer}</h1>
+      <h1 className="lives">Lives: {lives + 1}</h1>
     </div>
   );
   React.useEffect(() => {
@@ -58,7 +60,16 @@ const Box = () => {
     <div>
       {readyState && stats}
       <div>
-        {readyState && <AuthorQuiz setScore={setScore} score={score} />}
+        {readyState && (
+          <AuthorQuiz
+            setScore={setScore}
+            score={score}
+            setLives={setLives}
+            lives={lives}
+            setTimer={setTimer}
+            timer={timer}
+          />
+        )}
         {!readyState && timer <= 0 && (
           <>
             <h1> Your Final Score is {score}</h1>

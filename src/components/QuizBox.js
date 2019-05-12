@@ -8,7 +8,7 @@ const QuizBox = props => {
 
   const checkAnswer = bool => {
     if (color === "blue") {
-      bool ? winner() : setColor("red");
+      bool ? winner() : loser();
     }
   };
 
@@ -22,6 +22,16 @@ const QuizBox = props => {
   const winner = () => {
     props.setScore(props.score + 1);
     setColor("green");
+  };
+
+  const loser = () => {
+    if (props.lives > 0) {
+      props.setLives(props.lives - 1);
+    } else {
+      props.setLives(props.lives - 1);
+      props.setTimer(0);
+    }
+    setColor("red");
   };
 
   const displayBtn = <button onClick={() => helper()}>Next</button>;
@@ -49,7 +59,7 @@ const QuizBox = props => {
         </div>
       )}
 
-      {color !== "blue" ? displayBtn : null}
+      {color !== "blue" && props.timer > 0 ? displayBtn : null}
     </div>
   );
 };
