@@ -40,18 +40,21 @@ const Box = () => {
   const gameMode = mode => {
     if (mode === "easy") {
       setTimer(60);
+      setLives(4);
       setReadyState(true);
       setMode(false);
 
       return null;
     } else if (mode === "regular") {
       setTimer(30);
+      setLives(2);
       setReadyState(true);
       setMode(false);
 
       return null;
     }
     setTimer(15);
+    setLives(1);
     setReadyState(true);
     setMode(false);
     return null;
