@@ -39,21 +39,21 @@ const Box = () => {
 
   const gameMode = mode => {
     if (mode === "easy") {
-      setTimer(60);
+      setTimer(90);
       setLives(4);
       setReadyState(true);
       setMode(false);
 
       return null;
     } else if (mode === "regular") {
-      setTimer(30);
+      setTimer(60);
       setLives(2);
       setReadyState(true);
       setMode(false);
 
       return null;
     }
-    setTimer(15);
+    setTimer(30);
     setLives(1);
     setReadyState(true);
     setMode(false);
@@ -91,15 +91,15 @@ const Box = () => {
             <br />
             <div>
               <button onClick={() => gameMode("easy")}>Easy Mode</button>
-              <p>Gives you 60 Seconds to Choose Answers</p>
+              <p>This option gives you 5 lives and 90 seconds to asnwer!</p>
             </div>
             <div>
               <button onClick={() => gameMode("regular")}>Regular Mode</button>
-              <p>Gives you 30 Seconds to Choose Answers</p>
+              <p>This option gives you 3 lives and 60 seconds to asnwer!</p>
             </div>
             <div>
               <button onClick={() => gameMode("hard")}>Hard Mode</button>
-              <p>Gives you 15 Seconds to Choose Answers</p>
+              <p>This option gives you 1 lives and 30 seconds to asnwer!</p>
             </div>
           </div>
         )}

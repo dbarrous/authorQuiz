@@ -1,10 +1,14 @@
 import React from "react";
 import QuizBox from "./QuizBox.js";
-import bookLibrary from "./data/bookLibrary.js";
-import data from "./data/data.js";
+// import bookLibrary from "./data/bookLibrary.js";
+import data from "./data/newData.js";
 import shuffle from "./shuffle.js";
-
-let array1 = Array.from(Array(24), (x, index) => index);
+let bookLibrary = [];
+for (let i = 0; i <= 60; i++) {
+  bookLibrary = bookLibrary.concat(data[i].books);
+}
+console.log(bookLibrary);
+let array1 = Array.from(Array(60), (x, index) => index);
 shuffle(array1);
 let round = array1.pop();
 const AuthorQuiz = props => {

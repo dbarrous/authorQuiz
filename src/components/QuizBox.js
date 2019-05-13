@@ -39,7 +39,7 @@ const QuizBox = props => {
     <div className="quizBox" style={{ background: color }}>
       <div className="author">
         <h1>{props.data.author}</h1>
-        <img src={props.data.authorImg} alt={props.data.author} />
+        {/* <img src={props.data.authorImg} alt={props.data.author} /> */}
         {color === "green" ? (
           <h1>You are Correct!</h1>
         ) : color === "red" ? (
