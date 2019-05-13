@@ -385,250 +385,80 @@ const data = {
       "The Man Who Laughs"
     ]
   },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
+  51: {
+    id: 51,
+    authorImg: "img/fyodordostoevsky.png",
+    author: "Fyodor Dostoevsky",
+    books: ["Crime and Punishment", "The Idiot", "The Brothers Karamazov"]
   },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
+  52: {
+    id: 52,
+    authorImg: "img/migueldecervantes.png",
+    author: "Miguel de Cervantes",
+    books: ["Don Quixote", "La Galatea", "La Gitanilla"]
   },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
+  53: {
+    id: 53,
+    authorImg: "img/johngreen.png",
+    author: "John Green",
+    books: ["The Fault in Our Stars", "Paper Towns", "Turtles All the Way Down"]
   },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
+  54: {
+    id: 54,
+    authorImg: "img/margaretatwood.png",
+    author: "Margaret Atwood",
+    books: ["The Handmaid's Tale", "Cat's Eye", "The Blind Assassin"]
   },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
+  55: {
+    id: 55,
+    authorImg: "img/williamshakespeare.png",
+    author: "William Shakespeare",
+    books: ["Romeo and Juliet", "Macbeth", "Hamlet"]
   },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
+  56: {
+    id: 56,
+    authorImg: "img/sigmundfreud.png",
+    author: "Sigmund Freud",
+    books: [
+      "The Interpretation of Dreams",
+      "Introduction to Psychoanalysis",
+      "Totem and Taboo"
+    ]
   },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
+  57: {
+    id: 57,
+    authorImg: "img/oscarwilde.png",
+    author: "Oscar Wilde",
+    books: ["The Picture of Dorian Gray", "Salome", "The Canterville Ghost"]
   },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
+  58: {
+    id: 58,
+    authorImg: "img/carljung.png",
+    author: "Carl Jung",
+    books: [
+      "Archetypes and the Collective Unconscious",
+      "Psychological Types",
+      "Psychology and Alchemy"
+    ]
   },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
+  59: {
+    id: 59,
+    authorImg: "img/honoredebalzac.png",
+    author: "Honoré de Balzac",
+    books: ["A Woman of Thirty", "La Peau de Chagrin", "Le lys dans la vallée"]
   },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
-  },
-  0: {
-    id: 0,
-    authorImg: "https://images.gr-assets.com/authors/1362814142p8/3389.jpg",
-    author: "Stephen King",
-    books: ["It", "The Shining"]
+  60: {
+    id: 60,
+    authorImg: "img/harukimurakami.png",
+    author: "Haruki Murakami",
+    books: ["1Q84", "Kafka on the Shore", "The Wind-Up Bird Chronicle"]
   }
 };
+
+export default data;
+
+// let array = [];
+// for (let i = 0; i <= 60; i++) {
+//   array = array.concat(data[i].books);
+// }
+// console.log(array);
