@@ -8,6 +8,7 @@ const Box = () => {
   const [timer, setTimer] = React.useState(99999);
   const [readyState, setReadyState] = React.useState(false);
   const [mode, setMode] = React.useState(true);
+
   //TODO finish replay feature without needing to reload
   // const playAgain = () => {
   //   setTimer(30);
@@ -39,21 +40,21 @@ const Box = () => {
 
   const gameMode = mode => {
     if (mode === "easy") {
-      setTimer(90);
+      setTimer(92);
       setLives(4);
       setReadyState(true);
       setMode(false);
 
       return null;
     } else if (mode === "regular") {
-      setTimer(60);
+      setTimer(62);
       setLives(2);
       setReadyState(true);
       setMode(false);
 
       return null;
     }
-    setTimer(30);
+    setTimer(32);
     setLives(1);
     setReadyState(true);
     setMode(false);
@@ -61,10 +62,11 @@ const Box = () => {
   };
   return (
     <div>
-      {readyState && stats}
+      {/* {readyState && stats} */}
       <div>
-        {readyState && (
+        {readyState ? (
           <AuthorQuiz
+            stats={stats}
             setScore={setScore}
             score={score}
             setLives={setLives}
@@ -72,7 +74,8 @@ const Box = () => {
             setTimer={setTimer}
             timer={timer}
           />
-        )}
+        ) : null}
+
         {!readyState && timer <= 0 && (
           <>
             <h1> Your Final Score is {score}</h1>
@@ -81,6 +84,7 @@ const Box = () => {
             </button>
           </>
         )}
+
         {mode && timer > 0 && (
           <div>
             <h1>Author Quiz</h1>
@@ -91,15 +95,16 @@ const Box = () => {
             <br />
             <div>
               <button onClick={() => gameMode("easy")}>Easy Mode</button>
-              <p>This option gives you 5 lives and 90 seconds to asnwer!</p>
+              <p>This option gives you 5 lives and 90 seconds to answer!</p>
             </div>
+
             <div>
               <button onClick={() => gameMode("regular")}>Regular Mode</button>
-              <p>This option gives you 3 lives and 60 seconds to asnwer!</p>
+              <p>This option gives you 3 lives and 60 seconds to answer!</p>
             </div>
             <div>
               <button onClick={() => gameMode("hard")}>Hard Mode</button>
-              <p>This option gives you 1 lives and 30 seconds to asnwer!</p>
+              <p>This option gives you 1 lives and 30 seconds to answer!</p>
             </div>
           </div>
         )}

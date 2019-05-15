@@ -30,6 +30,7 @@ const AuthorQuiz = props => {
   };
   const [game, setGame] = React.useState(round);
   const [answers, setAnswers] = React.useState(answerArray(bookLibrary));
+  const [countdown, setCountdown] = React.useState(3);
 
   const nextRound = () => {
     if (array1.length >= 1) {
@@ -50,7 +51,19 @@ const AuthorQuiz = props => {
     setAnswers(answerArray());
   }, [game]);
   /* eslint-enable */
+  React.useEffect(() => {
+    if (countdown > 0) {
+      let timerID = setInterval(() => tick(), 950);
 
+      return function cleanup() {
+        clearInterval(timerID);
+      };
+    }
+  });
+
+  function tick() {
+    setCountdown(countdown - 1);
+  }
   let quiz = (
     <QuizBox
       data={data[game]}
@@ -64,7 +77,18 @@ const AuthorQuiz = props => {
       timer={props.timer}
     />
   );
-  return <div className={"outerBox"}>{quiz}</div>;
+  let counter = (
+    <div className="counter">
+      <h3>Get Ready to Play!</h3>
+      <h1>{countdown}</h1>
+    </div>
+  );
+  return (
+    <div className={"outerBox"}>
+      {countdown > 0 ? null : props.stats}
+      {countdown > 0 ? counter : quiz}
+    </div>
+  );
 };
 
 export default AuthorQuiz;
