@@ -34,6 +34,18 @@ body {
   justify-content: center;
 }
 
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  font-size: 20px;
+}
+
+.counter h1 {
+  font-size: 100px;
+}
+
 @media screen and (max-width: 600px) {
   body {
     overflow: hidden;
