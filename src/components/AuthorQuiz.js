@@ -7,7 +7,6 @@ let bookLibrary = [];
 for (let i = 0; i <= 60; i++) {
   bookLibrary = bookLibrary.concat(data[i].books);
 }
-console.log(bookLibrary);
 let array1 = Array.from(Array(60), (x, index) => index);
 shuffle(array1);
 let round = array1.pop();
@@ -34,15 +33,14 @@ const AuthorQuiz = props => {
 
   const nextRound = () => {
     if (array1.length >= 1) {
-      console.log(array1);
       setGame(array1.pop());
       return null;
     } else {
-      array1 = Array.from(Array(24), (x, index) => index);
+      array1 = Array.from(Array(50), (x, index) => index);
       shuffle(array1);
-      console.log("New" + array1);
+
       setGame(array1.pop());
-      console.log("New after Pop" + array1);
+
       return null;
     }
   };

@@ -2,6 +2,8 @@ import React from "react";
 
 import AuthorQuiz from "./AuthorQuiz";
 
+import ScoreBoard from "./ScoreBoard";
+
 const Box = () => {
   const [score, setScore] = React.useState(0);
   const [lives, setLives] = React.useState(2);
@@ -79,6 +81,7 @@ const Box = () => {
         {!readyState && timer <= 0 && (
           <>
             <h1> Your Final Score is {score}</h1>
+            <ScoreBoard score={score} />
             <button onClick={() => window.location.reload()}>
               Play Again?
             </button>
